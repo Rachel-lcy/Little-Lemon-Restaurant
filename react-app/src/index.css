@@ -1,0 +1,477 @@
+
+body {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1200px){
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:768px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+.header{
+ display: flex;
+ align-items: center;
+ margin-bottom: 20px;
+ margin-top: 50px;
+ justify-content: center;
+}
+
+.logo-image{
+  height: 100%;
+  width: 250px;
+  margin-right: 100px;
+  
+}
+
+.nav{
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  font-size: x-large;
+  font-weight: bold;
+  
+}
+.nav a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-section{
+  background-color: #495E57;
+  margin: 0 auto;
+  text-align: left; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 40px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-container{
+  flex: auto;
+  max-width: 600px;
+  min-width: 200px;
+  margin-left: 14%;
+  width: 35%;
+}
+
+.hero-container h2{
+  color: #F4CE14;
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.hero-container h3{
+  color: white;
+  font-size: x-large;
+}
+.hero-container p{
+  color: white;
+  text-wrap: wrap;
+  line-height: 1.6;
+ }
+
+.button{
+  background-color: #F4CE14;
+  color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hero-image{
+  margin-right: 10%;
+}
+
+.hero-image img{
+  width: 100%;
+  height:100%;
+  border-radius: 20px;
+}
+
+.topInformation{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.topInformation h2{
+  display: flex;
+  margin-left: 16%;
+  font-size: 40.2px;
+  
+}
+
+.menuBtn{
+  text-align: center;
+  background-color: #F4CE14;
+  border-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 22%;
+  width: 180px;
+  height: 60px;
+  
+}
+
+.foods{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: auto;
+  justify-self: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.food-card{
+  flex: auto;
+  background-color: rgb(233, 233, 233);
+  padding: 50px;
+  max-width: 250px; /* 限制卡片的最大宽度 */
+  min-width: 200px; /* 设置最小宽度，以确保内容不会过小 */
+  text-align: left;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-card img{
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+
+}
+
+.food-name {
+  display: flex;
+  margin-top: 30px;
+  
+}
+.price {
+  color: red;
+}
+
+.food-name h3{
+  font-size: 18px;
+}
+
+.food-card p{
+  line-height: 1.8;
+}
+
+.order-delivery {
+  display: flex;
+  align-items:center;
+  justify-content: start;
+}
+
+.order-icon{
+  padding-right: 15px;
+}
+
+.testimonial-heading{
+  display: flex;
+  color: #F4CE14;
+  font-size: 70px;
+  font-weight: bold;
+  justify-content: center;
+
+}
+.testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: beige;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.t-card{
+  background-color: rgb(255, 253, 251);
+  max-width: 220px;
+  flex: 1 1 100px;
+  margin: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+ 
+}
+
+.center-card{
+  margin-left: 15px;
+  
+}
+
+
+.t-card p{
+  font-size: 20px;
+}
+.right-name{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.right-name p{
+  margin-left: 20px;
+}
+
+.right-name img{
+  width: 20%;
+  height: auto;
+}
+
+.all-about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  gap: 200px;
+  margin-bottom: 100px;
+}
+
+.about-section{
+  width: 60%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  margin-top: 40px;
+}
+
+.about-section h2{
+  font-size: 42px;
+  margin: 15px;
+}
+.about-section h3{
+  font-size: 30px;
+  margin: 10px;
+}
+.about-section p{
+  font-size: 16px;
+  line-height: 2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+}
+
+.picture-section{
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 100px;
+  margin-top:-10px;
+  margin-bottom: 150px;
+  margin-right: -74px;
+}
+
+.show-pictures{
+ width: 80%;
+ height: auto;
+ gap: 70px;
+ 
+}
+
+
+.picture{
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: 20px; /* 调整图片的垂直位置 */
+  left: 0; /* 控制图片水平位置 */
+  z-index: 1;
+  opacity: 0.8; /* 调整透明度以达到层次感 */
+  border-radius: 12px;
+  text-decoration: underline;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.picture-overlapping{
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: -90px; /* 调整图片的垂直位置 */
+  left: 170px; /* 控制图片水平位置 */
+  z-index: 5;
+  border-radius: 12px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.footer-information{
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+footer h4{
+ font-weight: bold;
+ font-size: 20px;
+ margin-bottom: 20px;
+ margin-top: 0px;
+ padding-top: 0;
+ line-height: 2;
+
+}
+
+.footer-image {
+  margin-top: 30px; 
+  height: 110px;
+  width: 60px;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+  gap: 10px;
+  line-height: 1.8;
+}
+
+.footer p {
+  margin-top: 10px;
+  align-self: flex-start; /* 将 copyright 文本对齐到顶部 */
+}
+
+
+.submitBtn{
+  width: 800px;
+  background-color: #F4CE14;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.submitBtn :hover{
+  background-color: #ffb300;
+}
+
+
+
+.booking-form {
+  display: grid;
+  max-width: 0px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 标签样式 */
+.booking-form label {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 输入框和选择框的样式 */
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select {
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 提交按钮样式 */
+.booking-form input[type="submit"] {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #ffcc00;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form input[type="submit"]:hover {
+  background-color: #ffb300;
+}
+
+.booking-header-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.booking-logo{
+  height: auto;
+  width: 400px;
+  
+}
+
+.booking-header{
+  margin-bottom: 50px;
+}
+
+.booking-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 280px;
+  text-align: center;
+}
+
+
+.confirmation-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.confirmation-content {
+  flex: 1; /* 占满剩余空间，确保 footer 推到页面底部 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
