@@ -9,7 +9,7 @@ function ConfirmedBooking(){
             <h1>Booking Confirmed!</h1>
             <p>Your booking has been successfully confirmed. We look forward to seeing you!</p>
         </div>
-        
+
         <footer className="booking-footer">
           <div>
             <Link to="/">
@@ -17,7 +17,7 @@ function ConfirmedBooking(){
           </Link>
           <p>&copy; {new Date().getFullYear()} Little Lemon Website</p>
           </div>
-        
+
         </footer>
     </div>
 );
