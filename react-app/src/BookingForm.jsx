@@ -9,6 +9,7 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
+  const [isFormValid, setIsFormValid] = useState(false);
   const [formData, setFormData] = useState({
     date: '',
     time: '',
@@ -16,6 +17,11 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
     occasion: ''
   });
   
+  const handleGuestChange = (e) =>{
+    const value = e.target.value;
+    setGuests(value);
+    setIsFormValid(value >=1 );
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -64,12 +70,14 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
         <label htmlFor="guests">Number of guests</label>
         <input
           type="number"
-          placeholder="1"
+          placeholder="Number of guests"
           min="1"
+          required
           max="10"
           id="guests"
+          name='guests'
           value={guests}
-          onChange={(e) => setGuests(e.target.value)}
+          onChange={handleGuestChange}
         />
 
         <label htmlFor="occasion">Occasion</label>
@@ -82,7 +90,9 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
           <option value="Anniversary">Anniversary</option>
         </select>
 
-        <button className='submitBtn'>Make Your Reservation</button>
+        <button className='submitBtn' type="submit" disabled={!isFormValid} >
+          Make Your Reservation
+        </button>
 
       </form>
 
