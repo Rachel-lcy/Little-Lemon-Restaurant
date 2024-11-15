@@ -50,6 +50,8 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
         <input
           type="date"
           id="res-date"
+          required
+          aria-required = "true"
           value={date}
           onChange={handleDateChange}
         />
@@ -58,6 +60,8 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
         <select
           id="res-time"
           value={time}
+          required
+          aria-required = "true"
           onChange={(e) => setTime(e.target.value)}
         >
           {availableTimes.map((timeOption) => (
@@ -90,9 +94,16 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
           <option value="Anniversary">Anniversary</option>
         </select>
 
-        <button className='submitBtn' type="submit" disabled={!isFormValid} >
+        <button 
+            className='submitBtn' 
+            type="submit" 
+            disabled={!isFormValid}
+            arial-label="Make Your Reservation"
+            >
           Make Your Reservation
         </button>
+
+        {/* <div role="alert">Please fill out all required fields</div> */}
 
       </form>
 
