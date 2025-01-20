@@ -16,7 +16,7 @@ function Testimonials(){
             <p>Review All ...</p>
           </div>
         </div>
-        
+
         <div className='t-card'>
           <div className='center-card'>
             <p>Rating ⭐️⭐️⭐️⭐️⭐️</p>
