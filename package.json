@@ -1,9 +1,21 @@
 {
+  "name": "react-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
   "dependencies": {
-    "@testing-library/react": "^16.0.1",
-    "axios": "^1.7.9",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "preact": "^10.24.3",
+    "react-router-dom": "^6.28.0",
+    "@remix-run/dev": "^2.16.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.1",
+    "vite": "^5.4.10"
   }
 }
