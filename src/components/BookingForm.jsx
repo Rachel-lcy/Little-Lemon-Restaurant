@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import logo from './assets/logo.jpg';
+import logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom';
-import footerLogo from './assets/logo-footer.png';
+import footerLogo from '../assets/logo-footer.png';
 
 
 function BookingForm({ availableTimes, dispatch,submitForm }) {

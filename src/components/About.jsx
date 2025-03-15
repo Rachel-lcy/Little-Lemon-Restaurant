@@ -1,6 +1,6 @@
 import React from 'react';
-import aboutPicture from './assets/chef.jpg';
-import restaurantPicture from './assets/restaurant2.jpg';
+import aboutPicture from '../assets/chef.jpg';
+import restaurantPicture from '../assets/restaurant2.jpg';
 
 function About(){
   return(

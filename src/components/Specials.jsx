@@ -1,9 +1,9 @@
 import React from 'react';
-import greekSalad from './assets/greek-salad.jpg';
-import bruchetta from './assets/bruchetta.jpg';
-import lemonDessert from './assets/lemon-dessert.jpg';
-import blueberries from './assets/blueberries.jpg'
-import order from './assets/order.jpg'
+import greekSalad from '../assets/greek-salad.jpg';
+import bruchetta from '../assets/bruchetta.jpg';
+import lemonDessert from '../assets/lemon-dessert.jpg';
+import blueberries from '../assets/blueberries.jpg'
+import order from '../assets/order.jpg'
 
 
 function Specials(){

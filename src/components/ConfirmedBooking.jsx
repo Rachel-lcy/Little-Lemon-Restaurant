@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from './assets/logo-footer.png';
+import footerLogo from '../assets/logo-footer.png';
 import { Link } from 'react-router-dom';
 
 function ConfirmedBooking(){

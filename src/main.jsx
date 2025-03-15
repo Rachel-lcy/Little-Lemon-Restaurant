@@ -2,7 +2,7 @@ import React, { useState, useReducer } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './app.jsx';
-import BookingForm from './BookingForm.jsx';
+import BookingForm from './components/BookingForm.jsx';
 import { submitAPI, fetchAPI } from './Api.jsx';
 import { useNavigate } from "react-router-dom";
 
