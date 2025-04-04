@@ -12,6 +12,7 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 if (!PUBLISHABLE_KEY) {
   throw new Error('Add your Clerk Publishable Key to the .env file');
 }
+console.log("✅ App loaded from Vite!"); //
 ReactDOM.createRoot(document.getElementById('app'))
 .render(
     <React.StrictMode>
@@ -29,7 +30,7 @@ function initializeTimes() {
 
 function updateTimes(state, action) {
   if (action.type === "UPDATE_TIMES") {
-    return fetchAPI(action.payload); // 使用用户选择的日期调用 fetchAPI
+    return fetchAPI(action.payload);
   }
   return state;
 }
