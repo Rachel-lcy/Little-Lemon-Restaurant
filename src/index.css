@@ -3,6 +3,11 @@ body {
   color: black !important;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 1200px){
   body {
     display: grid;
@@ -37,7 +42,6 @@ body {
   gap: 50px;
   font-size: x-large;
   font-weight: bold;
-  
 }
 .nav a{
   text-decoration: none;
@@ -146,8 +150,8 @@ body {
   flex: auto;
   background-color: rgb(233, 233, 233);
   padding: 50px;
-  max-width: 250px; /* 限制卡片的最大宽度 */
-  min-width: 200px; /* 设置最小宽度，以确保内容不会过小 */
+  max-width: 250px;
+  min-width: 200px;
   text-align: left;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -208,6 +212,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 10px;
 }
 
 .t-card{
@@ -240,8 +245,9 @@ body {
 }
 
 .right-name img{
-  width: 20%;
-  height: auto;
+  width: 30px;;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .all-about{
@@ -303,10 +309,10 @@ body {
   width: 250px;
   height: 350px;
   position: absolute;
-  top: 20px; /* 调整图片的垂直位置 */
-  left: 0; /* 控制图片水平位置 */
+  top: 20px;
+  left: 0;
   z-index: 1;
-  opacity: 0.8; /* 调整透明度以达到层次感 */
+  opacity: 0.8;
   border-radius: 12px;
   text-decoration: underline;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -318,10 +324,10 @@ body {
   width: 250px;
   height: 350px;
   position: absolute;
-  top: -90px; /* 调整图片的垂直位置 */
-  left: 170px; /* 控制图片水平位置 */
+  top: -90px;
+  left: 170px;
   z-index: 5;
-  border-radius: 12px;  
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }

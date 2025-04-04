@@ -1,14 +1,25 @@
 import React, { useState, useReducer } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './app.jsx';
+import App from './App.jsx';
 import BookingForm from './components/BookingForm.jsx';
 import { submitAPI, fetchAPI } from './Api.jsx';
 import { useNavigate } from "react-router-dom";
+import { ClerkProvider } from '@clerk/clerk-react'
 
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
-const root = ReactDOM.createRoot(document.getElementById('app'));
-root.render(<App />);
+if (!PUBLISHABLE_KEY) {
+  throw new Error('Add your Clerk Publishable Key to the .env file');
+}
+ReactDOM.createRoot(document.getElementById('app'))
+.render(
+    <React.StrictMode>
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+        <App />
+      </ClerkProvider>
+    </React.StrictMode>,);
+
 
 function initializeTimes() {
   const today= new Date();

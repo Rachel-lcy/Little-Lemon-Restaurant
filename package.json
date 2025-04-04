@@ -10,12 +10,15 @@
     "start": "vite"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.24.2",
+    "@remix-run/dev": "^2.16.0",
+    "@tailwindcss/vite": "^4.0.14",
     "preact": "^10.24.3",
-    "react-router-dom": "^6.28.0",
-    "@remix-run/dev": "^2.16.0"
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "vite": "^5.4.10"
   }
 }

@@ -1,5 +1,8 @@
 import React from 'react';
-import user from '../assets/user.png'
+import user from '../assets/user.jpg';
+import user2 from '../assets/user2.jpg';
+import user3 from '../assets/user3.jpg';
+import user4 from '../assets/user4.jpg';
 
 function Testimonials(){
   return(
@@ -11,7 +14,7 @@ function Testimonials(){
             <p>Rating ⭐️⭐️⭐️⭐️⭐️</p>
             <div className='right-name'>
               <img src={user} alt="user picture" />
-              <p>Name</p>
+              <p>Alexander Hipp </p>
             </div>
             <p>Review All ...</p>
           </div>
@@ -21,8 +24,8 @@ function Testimonials(){
           <div className='center-card'>
             <p>Rating ⭐️⭐️⭐️⭐️⭐️</p>
             <div className='right-name'>
-              <img src={user} alt="user picture" />
-              <p>Name</p>
+              <img src={user2} alt="user picture" />
+              <p>Gabriel Silvério</p>
             </div>
             <p>Review All ...</p>
           </div>
@@ -32,8 +35,8 @@ function Testimonials(){
           <div className='center-card'>
             <p>Rating ⭐️⭐️⭐️⭐️⭐️</p>
             <div className='right-name'>
-              <img src={user} alt="user picture" />
-              <p>Name</p>
+              <img src={user3} alt="user picture" />
+              <p>Jack Finnigan</p>
             </div>
             <p>Review All ...</p>
           </div>
@@ -43,8 +46,8 @@ function Testimonials(){
           <div className='center-card'>
             <p>Rating ⭐️⭐️⭐️⭐️⭐️</p>
             <div className='right-name'>
-              <img src={user} alt="user picture" />
-              <p>Name</p>
+              <img src={user4} alt="user picture" />
+              <p>Armen Poghosn</p>
             </div>
             <p>Review All ...</p>
           </div>

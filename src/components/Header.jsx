@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../assets/logo.jpg';
 import {Link} from 'react-router-dom';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
+
 
 function Header(){
     return(
@@ -13,7 +15,7 @@ function Header(){
             <Link to="/menu">Menu</Link>
             <Link to="/booking-a-table">Reservation</Link>
             <Link to="/order-online">Order Online</Link>
-            <Link to="/login">Login</Link>
+
           </nav>
         </header>
       </>
